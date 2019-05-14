@@ -1,0 +1,7 @@
+com/polytech/Polynet/application/InMemoryStoryRepository.class
+com/polytech/Polynet/view/StoryController.class
+com/polytech/Polynet/application/PublicationService.class
+com/polytech/Polynet/application/Story.class
+com/polytech/Polynet/application/StoryRepository.class
+com/polytech/Polynet/Main.class
+com/polytech/Polynet/data/MongoStoryRepository.class
