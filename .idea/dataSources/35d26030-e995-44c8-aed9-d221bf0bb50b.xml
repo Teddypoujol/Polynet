@@ -1108,8 +1108,8 @@
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <table id="278" parent="5" name="COMMENT"/>
-    <table id="279" parent="5" name="STORY"/>
+    <table id="278" parent="5" name="comment"/>
+    <table id="279" parent="5" name="story"/>
     <column id="280" parent="278" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
@@ -1139,7 +1139,7 @@
     <foreign-key id="285" parent="278" name="COMMENT_STORY_id_fk">
       <ColNames>id_story</ColNames>
       <RefSchemaName>polynet</RefSchemaName>
-      <RefTableName>STORY</RefTableName>
+      <RefTableName>story</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
     <column id="286" parent="279" name="id">
