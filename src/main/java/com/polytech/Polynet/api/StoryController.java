@@ -4,6 +4,7 @@ import com.polytech.Polynet.business.Comment;
 import com.polytech.Polynet.business.FeedService;
 import com.polytech.Polynet.business.PublicationService;
 import com.polytech.Polynet.business.Story;
+import com.polytech.Polynet.repository.StoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -33,6 +34,11 @@ public class StoryController {
         return feedService.fetchAll();
     }
 
+    @DeleteMapping("/story/{id}")
+    public void deleteStory(@PathVariable(value = "id") int id_story) {
+
+
+    }
 
 
 }

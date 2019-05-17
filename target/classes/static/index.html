@@ -7,92 +7,113 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>POLYNET</title>
-
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
     <!-- Bootstrap core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <style>
-        body {
-            padding-top: 50px;
-        }
-        .starter-template {
-            padding: 40px 15px;
-            text-align: center;
-        }
-    </style>
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
     <![endif]-->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
 </head>
 
 <body ng-controller="MainController">
 
-<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Polynet</a>
-        </div>
-        <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-            </ul>
-        </div><!--/.nav-collapse -->
-    </div>
-</div>
-
-<div class="container">
-
-    <div class="starter-template">
-
-
-        <form ng-submit="share()">
-            <legend>Espace</legend>
-
-            <div class="form-group">
-                <label for=""></label>
-                <input type="text" class="form-control" ng-model="Data.content" placeholder="Ma vie nulle...">
-                <button type="submit" class="btn btn-primary float-right">Share</button>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <div class="container bootstrap snippet">
+        <div class="row">
+            <div class="panel">
+                <div class="cover-photo">
+                    <div class="fb-timeline-img">
+                        <img src="img/darkoon.jpeg" alt="">
+                    </div>
+                    <div class="fb-name">
+                        <h2><a href="#">Poujol Teddy (Raccoon)</a></h2>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="profile-thumb">
+                        <img src="img/raton.jpg" alt="">
+                    </div>
+                    <a href="#" class="fb-user-mail">teddypoujol@gmail.com</a>
+                </div>
             </div>
 
+            <div class="panel profile-info">
+                <form>
+                    <textarea class="form-control input-lg p-text-area" ng-model="Data.content" rows="2" placeholder="Whats in your mind today?"></textarea>
+                </form>
+                <footer class="panel-footer">
+                    <button ng-click="share()" type="button" class="btn btn-info pull-right">Post</button>
+                    <ul class="nav nav-pills">
+                        <li><a href="#"><i class="fa fa-map-marker"></i></a></li>
+                        <li><a href="#"><i class="fa fa-camera"></i></a></li>
+                        <li><a href="#"><i class=" fa fa-film"></i></a></li>
+                        <li><a href="#"><i class="fa fa-microphone"></i></a></li>
+                    </ul>
+                </footer>
+            </div>
 
-        </form>
-        <div class="panel panel-default">
-            <ul class="list-group" ng-repeat="story in stories">
-                <div class="panel-header">
+            <div class="panel" ng-repeat="story in stories">
+                <div class="panel-body">
+                    <div class="fb-user-thumb">
+                        <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="">
+                    </div>
+                    <div class="fb-user-details">
+                        <h3><a href="#" class="#">Margarita Elina</a></h3>
+                        <p>7 minutes ago near Alaska, USA</p>
+                    </div>
+                    <div class="clearfix"></div>
+                    <p class="fb-user-status">{{story.content}}
+                    </p>
+                    <div class="fb-status-container fb-border">
+                        <div class="fb-time-action">
+                            <a href="#" title="Like this">Like</a>
+                            <span>-</span>
+                            <a href="#" title="Leave a comment">Comments</a>
+                            <span>-</span>
+                            <a href="#" title="Send this to friend or post it on your time line">Share</a>
+                        </div>
+                    </div>
 
-                        <li class="list-group-item">{{story.content}}</li>
-                        <div class="form-group">
-                            <label for=""></label>
-                            <input type="text" class="form-control" ng-model="story.newcomment" placeholder="Mon commentaire...">
-                            <button ng-click="shareCom(story.id,story.newcomment)" type="submit" class="btn btn-primary float-right">Commenter</button>
+
+                    <div class="fb-status-container fb-border fb-gray-bg">
+                        <div class="fb-time-action like-info">
+                            <a href="#">Jhon Due,</a>
+                            <a href="#">Danieal Kalion</a>
+                            <span>and</span>
+                            <a href="#">40 more</a>
+                            <span>like this</span>
                         </div>
 
+                        <ul class="fb-comments">
+                            <li ng-repeat="comment in story.comments" >
+                                <a href="#" class="cmt-thumb">
+                                    <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="">
+                                </a>
+                                <div class="cmt-details">
+                                    <a href="#">Jhone due</a>
+                                    <span> {{comment.comment}}</span>
+                                    <p>40 minutes ago - <a href="#" class="like-link">Like</a></p>
+                                </div>
+                            </li>
 
-                </div>
-                    <div class="panel-body" ng-repeat="comment in story.comments">
-
-                        <li class="list-group-item"> {{comment.comment}}</li>
-
+                            <li>
+                                <a href="#" class="cmt-thumb">
+                                    <img src="img/autre.jpeg" alt="">
+                                </a>
+                                <div class="cmt-form">
+                                    <textarea class="form-control" ng-model="story.newcomment" placeholder="Write a comment..." name=""></textarea>
+                                    <button ng-click="shareCom(story.id,story.newcomment)" type="button" class="btn btn-info pull-right">Post</button>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="clearfix"></div>
                     </div>
-            </ul>
+                </div>
+            </div>
         </div>
-
-
     </div>
-
-</div><!-- /.container -->
-
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->

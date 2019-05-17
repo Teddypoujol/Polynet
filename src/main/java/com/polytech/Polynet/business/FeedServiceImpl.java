@@ -15,4 +15,6 @@ public class FeedServiceImpl implements FeedService {
 
         return storyRepository.findAll();
     }
+
+
 }

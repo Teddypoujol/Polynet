@@ -94,6 +94,11 @@ public class JdbcStoryRepository implements StoryRepository {
     }
 
     @Override
+    public void delete(Story story) {
+
+    }
+
+    @Override
     public void saveCom(Comment com) {
         try {
             //GET CONNECTION

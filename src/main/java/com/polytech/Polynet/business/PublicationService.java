@@ -4,4 +4,5 @@ public interface PublicationService {
 
     void share(Story story);
     void shareCom(Comment com);
+
 }

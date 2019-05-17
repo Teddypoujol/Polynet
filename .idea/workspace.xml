@@ -2,49 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aec3b70e-c8f2-4dfa-a3dc-1452abbcc130" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/repository/JpaStoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/api/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/business/Authorities.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/business/RegisterService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/business/RegisterServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/business/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/register.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/autre.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/raccoon2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/raton.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/ratoncover.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/ratonmechant.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/espace.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/register.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/35d26030-e995-44c8-aed9-d221bf0bb50b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/35d26030-e995-44c8-aed9-d221bf0bb50b.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/application/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/application/AppStarter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/AppStarter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/application/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/business/Comment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/application/FeedService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/business/FeedService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/application/FeedServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/business/FeedServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/application/InMemoryStoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/repository/InMemoryStoryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/application/JdbcStoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/repository/JdbcStoryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/application/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/application/PublicationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/business/PublicationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/application/PublicationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/business/PublicationServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/application/Story.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/business/Story.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/application/StoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/api/StoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/application/StoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/repository/StoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/config/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/api/StoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/api/StoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/business/FeedService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/business/FeedService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/business/FeedServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/business/FeedServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/business/PublicationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/business/PublicationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/repository/InMemoryStoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/repository/InMemoryStoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/repository/JdbcStoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/repository/JdbcStoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/repository/JpaStoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/repository/JpaStoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/repository/StoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/repository/StoryRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/FeedServiceTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PublicationServiceTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/Polynet/application/AppConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/Polynet/application/AppStarter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/Polynet/application/Comment.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/Polynet/application/FeedService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/Polynet/application/FeedServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/Polynet/application/InMemoryStoryRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/Polynet/application/JdbcStoryRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/Polynet/application/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/Polynet/application/PublicationService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/Polynet/application/PublicationServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/Polynet/application/Story.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/Polynet/application/StoryController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/Polynet/application/StoryRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/Polynet/AppConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/Polynet/api/StoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/polytech/Polynet/api/StoryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/Polynet/repository/InMemoryStoryRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/polytech/Polynet/repository/InMemoryStoryRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/Polynet/repository/JdbcStoryRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/polytech/Polynet/repository/JdbcStoryRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/Polynet/repository/JpaStoryRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/polytech/Polynet/repository/JpaStoryRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/polytech/Polynet/repository/StoryRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/polytech/Polynet/repository/StoryRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/FeedServiceTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/PublicationServiceTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-FeedServiceTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-PublicationServiceTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/FeedServiceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/PublicationServiceTest.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -89,88 +84,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/static/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="111" column="30" selection-start-line="111" selection-start-column="30" selection-end-line="111" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/polytech/Polynet/business/Story.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-165">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/polytech/Polynet/api/StoryController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#842#843#0" expanded="true" />
-                <element signature="e#887#888#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/polytech/Polynet/AppConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="42" column="9" lean-forward="true" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/polytech/Polynet/repository/JdbcStoryRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-660">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/polytech/Polynet/repository/StoryRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/polytech/Polynet/business/Comment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/polytech/Polynet/business/FeedServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="285">
+              <caret line="19" column="35" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -178,12 +96,85 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/polytech/Polynet/repository/JpaStoryRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="235">
+              <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#0#21#1" expanded="true" />
+                <element signature="e#0#39#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/polytech/Polynet/repository/UserRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/polytech/Polynet/repository/JdbcStoryRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="101" column="23" lean-forward="true" selection-start-line="101" selection-start-column="23" selection-end-line="101" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://35d26030-e995-44c8-aed9-d221bf0bb50b/schema/polynet/table/comment">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state projectRestartId="4e83f30b-25e7-4b02-ae97-56a28e6fd5f4">
+              <filtering>
+                <filter text="" />
+              </filtering>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/register.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="750">
+              <caret line="50" column="6" selection-start-line="50" selection-start-column="6" selection-end-line="50" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/polytech/Polynet/config/SecurityConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-133">
+              <caret line="7" column="50" selection-start-line="7" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/register.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="316">
+              <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/espace.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/register.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="49" selection-start-column="49" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -193,9 +184,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -206,6 +199,7 @@
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/src/main/java/com/polytech/Polynet</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -214,8 +208,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/TestStory/InMemoryStoryRepository.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testfeed/FeedStoryTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/testStory/PublicationService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/application/ImpPublicationService.java" />
         <option value="$PROJECT_DIR$/src/test/java/PublicationServiceTest.java" />
@@ -232,7 +224,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/application/CommentController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/application/InMemoryCommentRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/application/InMemoryStoryRepository.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/application/Story.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/application/PublicationServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/application/PublicationService.java" />
@@ -242,13 +233,32 @@
         <option value="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/application/JdbcStoryRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/data/StoryRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/AppConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/repository/StoryRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/repository/JpaStoryRepository.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/business/Comment.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/business/Story.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/css/index.css" />
         <option value="$PROJECT_DIR$/src/main/resources/static/index.html" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/business/RegisterService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/business/RegisterServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/business/PublicationService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/repository/StoryRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/repository/UserRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/business/User.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/espace.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/business/FeedServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/business/FeedService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/repository/JdbcStoryRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/repository/InMemoryStoryRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/config/SecurityConfig.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/api/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/css/register.css" />
+        <option value="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/api/StoryController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/repository/JpaStoryRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/register.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/register.html" />
       </list>
     </option>
   </component>
@@ -276,9 +286,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-2" />
-    <option name="width" value="1370" />
-    <option name="height" value="742" />
+    <option name="x" value="394" />
+    <option name="y" value="63" />
+    <option name="width" value="847" />
+    <option name="height" value="787" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -286,7 +297,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -346,6 +356,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Polynet" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Polynet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Polynet" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Polynet" type="462c0819:PsiDirectoryNode" />
               <item name="repository" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -367,12 +386,31 @@
               <item name="Polynet" type="b2602c69:ProjectViewProjectNode" />
               <item name="Polynet" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Polynet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Polynet" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Polynet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Polynet" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -385,8 +423,10 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="SQL" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/application" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static/img" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -395,12 +435,13 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.polytech.Polynet.application" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/static/img" />
       <recent name="$PROJECT_DIR$/src/main/java/com/polytech/Polynet/application" />
       <recent name="$PROJECT_DIR$/src/test/java" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.polytech.Polynet.application" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -415,12 +456,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="AppStarter" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.AppStarter">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.polytech.Polynet.Main" />
       <module name="Polynet" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.polytech.Polynet.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppStarter" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="Polynet" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.polytech.Polynet.config.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -432,6 +486,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.AppStarter" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -452,12 +507,14 @@
       <workItem from="1557838579703" duration="4952000" />
       <workItem from="1557898146742" duration="24996000" />
       <workItem from="1557984288506" duration="5763000" />
-      <workItem from="1557990084208" duration="1999000" />
+      <workItem from="1557990084208" duration="7192000" />
+      <workItem from="1558009359472" duration="1979000" />
+      <workItem from="1558070451828" duration="10979000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54791000" />
+    <option name="totallyTimeSpent" value="72942000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -472,7 +529,7 @@
     <frame x="-2" y="0" width="1370" height="742" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29166666" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -482,7 +539,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32954547" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924242" visible="true" weight="0.3538961" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49545455" visible="true" weight="0.3538961" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39935064" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -490,11 +547,11 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3068182" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007576" side_tool="true" weight="0.32954547" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49924242" weight="0.3068182" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50454545" side_tool="true" visible="true" weight="0.3538961" />
       <window_info anchor="bottom" id="Spring" order="12" weight="0.13149351" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.32954547" />
-      <window_info anchor="bottom" id="Messages" order="14" weight="0.5503247" />
+      <window_info anchor="bottom" id="Messages" order="14" sideWeight="0.49848485" weight="0.5503247" />
       <window_info anchor="bottom" id="Java Enterprise" order="15" />
       <window_info active="true" anchor="bottom" id="SQL Generator" order="16" visible="true" weight="0.32954547" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -502,51 +559,13 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Maven" order="5" weight="0.32954547" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Database" order="8" visible="true" weight="0.23409091" />
-      <window_info anchor="right" id="Bean Validation" order="9" />
-      <window_info anchor="right" id="Coverage" order="10" side_tool="true" weight="0.32954547" />
-    </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2871212" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924242" visible="true" weight="0.3538961" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32954547" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3068182" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007576" side_tool="true" weight="0.32954547" />
-      <window_info anchor="bottom" id="Spring" order="12" weight="0.13149351" />
-      <window_info anchor="bottom" id="Database Console" order="13" weight="0.32954547" />
-      <window_info anchor="bottom" id="Messages" order="14" weight="0.5503247" />
-      <window_info anchor="bottom" id="Java Enterprise" order="15" />
-      <window_info active="true" anchor="bottom" id="SQL Generator" order="16" visible="true" weight="0.32954547" />
-      <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.32954547" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Maven" order="6" weight="0.32954547" />
+      <window_info anchor="right" id="Maven" order="5" weight="0.3280303" />
+      <window_info anchor="right" id="Bean Validation" order="6" weight="0.32998747" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Database" order="9" weight="0.23409091" />
-      <window_info anchor="right" id="Bean Validation" order="10" />
-    </layout-to-restore>
+      <window_info anchor="right" id="Database" order="9" visible="true" weight="0.24090908" />
+      <window_info anchor="right" id="Coverage" order="10" side_tool="true" weight="0.32954547" />
+    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -561,19 +580,6 @@
     </SUITE>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/testStory/StoryRepository.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/testStory/Story.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/testStory/InMemoryStoryRepository.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/polytech/Polynet/data/MongoStoryRepository.java" />
-    <entry file="file://$USER_HOME$/Desktop/PublicationService.java" />
-    <entry file="file://$USER_HOME$/Desktop/InMemoryStoryRepository.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/polytech/Polynet/application/ImpPublicationService.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/FeedStoryTest.java" />
-    <entry file="file://$USER_HOME$/Desktop/FeedServiceTest.java" />
-    <entry file="file://$USER_HOME$/Desktop/PublicationServiceTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/polytech/Polynet/application/Calc.java" />
-    <entry file="file://$USER_HOME$/Desktop/polytech-training-2019-master/src/main/java/com/polytech/polyNet/AppConfig.java" />
-    <entry file="das://35d26030-e995-44c8-aed9-d221bf0bb50b/schema/new_schema/table/story" />
     <entry file="das://35d26030-e995-44c8-aed9-d221bf0bb50b/collation/utf8_unicode_ci">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -590,20 +596,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://35d26030-e995-44c8-aed9-d221bf0bb50b/schema/polynet/table/COMMENT.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://35d26030-e995-44c8-aed9-d221bf0bb50b/schema/polynet/table/STORY.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://35d26030-e995-44c8-aed9-d221bf0bb50b/schema/polynet/table/COMMENT.sql" />
+    <entry file="das://35d26030-e995-44c8-aed9-d221bf0bb50b/schema/polynet/table/STORY.sql" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/35d26030-e995-44c8-aed9-d221bf0bb50b/console_1.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -616,12 +610,98 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/polytech/Polynet/application/JdbcCommentRepository.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/polytech/Polynet/application/CommentRepository.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/polytech/Polynet/application/InMemoryCommentRepository.java" />
-    <entry file="das://35d26030-e995-44c8-aed9-d221bf0bb50b/schema/polynet/table/STORY">
+    <entry file="das://35d26030-e995-44c8-aed9-d221bf0bb50b/schema/polynet/table/STORY" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/FeedServiceTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/PublicationServiceTest.java" />
+    <entry file="das://35d26030-e995-44c8-aed9-d221bf0bb50b/schema/polynet/table/COMMENT" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/polytech/Polynet/business/Story.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/img/ratonmechant.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/polytech/Polynet/business/Comment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/img/darkoon.jpeg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="41" column="21" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/polytech/Polynet/config/AppConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="5" lean-forward="true" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/polytech/Polynet/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://35d26030-e995-44c8-aed9-d221bf0bb50b/schema/polynet/table/users">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="7437c3ec-1b60-4f2b-8c53-39e92ae87507">
+        <state projectRestartId="4e83f30b-25e7-4b02-ae97-56a28e6fd5f4">
           <filtering>
             <filter text="" />
           </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://35d26030-e995-44c8-aed9-d221bf0bb50b/schema/polynet/table/authorities">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="4e83f30b-25e7-4b02-ae97-56a28e6fd5f4">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/polytech/Polynet/AppStarter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#244#245#0" expanded="true" />
+            <element signature="e#299#300#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -632,136 +712,181 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/polytech/Polynet/business/FeedService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="27" lean-forward="true" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/FeedServiceTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/polytech/Polynet/repository/InMemoryStoryRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PublicationServiceTest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/polytech/Polynet/business/PublicationService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/polytech/Polynet/Main.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/polytech/Polynet/business/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="63" column="12" selection-start-line="63" selection-start-column="12" selection-end-line="63" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/polytech/Polynet/AppStarter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+        <state relative-caret-position="465">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#244#245#0" expanded="true" />
-            <element signature="e#299#300#0" expanded="true" />
+            <element signature="e#548#549#0" expanded="true" />
+            <element signature="e#579#580#0" expanded="true" />
+            <element signature="e#627#628#0" expanded="true" />
+            <element signature="e#667#668#0" expanded="true" />
+            <element signature="e#702#703#0" expanded="true" />
+            <element signature="e#733#734#0" expanded="true" />
+            <element signature="e#781#782#0" expanded="true" />
+            <element signature="e#821#822#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/polytech/Polynet/repository/JdbcStoryRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/polytech/Polynet/business/RegisterService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-660">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="30">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/polytech/Polynet/api/StoryController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/polytech/Polynet/business/RegisterServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#842#843#0" expanded="true" />
-            <element signature="e#887#888#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/polytech/Polynet/AppConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/polytech/Polynet/business/FeedServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/polytech/Polynet/business/FeedService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/polytech/Polynet/repository/InMemoryStoryRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
-          <caret line="42" column="9" lean-forward="true" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/polytech/Polynet/repository/StoryRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/polytech/Polynet/business/FeedServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/polytech/Polynet/repository/JpaStoryRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#0#21#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://35d26030-e995-44c8-aed9-d221bf0bb50b/schema/polynet/table/COMMENT">
+    <entry file="das://35d26030-e995-44c8-aed9-d221bf0bb50b/schema/polynet/table/story">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="9125641c-6f3b-40f0-9c4d-5e20d06c5f85">
+        <state projectRestartId="4e83f30b-25e7-4b02-ae97-56a28e6fd5f4">
           <filtering>
             <filter text="" />
           </filtering>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/polytech/Polynet/business/Comment.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/polytech/Polynet/api/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/polytech/Polynet/business/Story.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-165">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="221">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/polytech/Polynet/business/Authorities.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/polytech/Polynet/api/StoryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="37" column="70" selection-start-line="37" selection-start-column="70" selection-end-line="37" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/polytech/Polynet/config/SecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-133">
+          <caret line="7" column="50" selection-start-line="7" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/polytech/Polynet/repository/JpaStoryRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/polytech/Polynet/repository/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/polytech/Polynet/repository/JdbcStoryRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="101" column="23" lean-forward="true" selection-start-line="101" selection-start-column="23" selection-end-line="101" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://35d26030-e995-44c8-aed9-d221bf0bb50b/schema/polynet/table/comment">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="4e83f30b-25e7-4b02-ae97-56a28e6fd5f4">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/register.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/register.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="49" selection-start-column="49" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/espace.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="111" column="30" selection-start-line="111" selection-start-column="30" selection-end-line="111" selection-end-column="30" />
+        <state relative-caret-position="285">
+          <caret line="19" column="35" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="50" column="6" selection-start-line="50" selection-start-column="6" selection-end-line="50" selection-end-column="6" />
         </state>
       </provider>
     </entry>

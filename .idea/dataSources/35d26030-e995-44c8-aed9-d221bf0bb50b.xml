@@ -1108,60 +1108,114 @@
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <table id="278" parent="5" name="comment"/>
-    <table id="279" parent="5" name="story"/>
-    <column id="280" parent="278" name="id">
+    <table id="278" parent="5" name="authorities"/>
+    <table id="279" parent="5" name="comment"/>
+    <table id="280" parent="5" name="story"/>
+    <table id="281" parent="5" name="users"/>
+    <column id="282" parent="278" name="username">
+      <Position>1</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="283" parent="278" name="authority">
+      <Position>2</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="284" parent="278" name="authorities_username_authority_uindex">
+      <ColNames>username
+authority</ColNames>
+      <Unique>1</Unique>
+      <Type>btree</Type>
+    </index>
+    <key id="285" parent="278" name="authorities_username_authority_uindex">
+      <ColNames>username
+authority</ColNames>
+      <UnderlyingIndexName>authorities_username_authority_uindex</UnderlyingIndexName>
+    </key>
+    <foreign-key id="286" parent="278" name="authorities_users_username_fk">
+      <ColNames>username</ColNames>
+      <RefSchemaName>polynet</RefSchemaName>
+      <RefTableName>users</RefTableName>
+      <RefColNames>username</RefColNames>
+    </foreign-key>
+    <column id="287" parent="279" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="281" parent="278" name="comment">
+    <column id="288" parent="279" name="comment">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="282" parent="278" name="id_story">
+    <column id="289" parent="279" name="id_story">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="283" parent="278" name="COMMENT_STORY_id_fk">
+    <index id="290" parent="279" name="COMMENT_STORY_id_fk">
       <ColNames>id_story</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="284" parent="278" name="PRIMARY">
+    <key id="291" parent="279" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="285" parent="278" name="COMMENT_STORY_id_fk">
+    <foreign-key id="292" parent="279" name="COMMENT_STORY_id_fk">
       <ColNames>id_story</ColNames>
       <RefSchemaName>polynet</RefSchemaName>
       <RefTableName>story</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="286" parent="279" name="id">
+    <column id="293" parent="280" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="287" parent="279" name="content">
+    <column id="294" parent="280" name="content">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="288" parent="279" name="date">
+    <column id="295" parent="280" name="date">
       <Position>3</Position>
       <DataType>datetime|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="289" parent="279" name="PRIMARY">
+    <key id="296" parent="280" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="297" parent="281" name="username">
+      <Position>1</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="298" parent="281" name="password">
+      <Position>2</Position>
+      <DataType>varchar(150)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="299" parent="281" name="enabled">
+      <Position>3</Position>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="300" parent="281" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>username</ColNames>
       <Primary>1</Primary>
     </key>
   </database-model>

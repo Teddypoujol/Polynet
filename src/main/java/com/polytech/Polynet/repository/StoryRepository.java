@@ -14,4 +14,8 @@ public interface StoryRepository {
 
     void saveCom(Comment com);
     List<Comment> findAllComment(int idS);
+
+
+
+    void delete(Story story);
 }

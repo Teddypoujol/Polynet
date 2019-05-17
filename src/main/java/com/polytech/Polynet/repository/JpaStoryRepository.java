@@ -17,12 +17,13 @@ public class JpaStoryRepository implements  StoryRepository{
     @PersistenceContext
     EntityManager em;
 
-
-    public String requeteFindStory = "SELECT s from Story s";
+    public String requeteFindStory = "SELECT s from Story s ORDER BY  id DESC ";
+    public String requeteFindByIdStory = "SELECT s from Story s Where ";
 
     @Override
     public List<Story> findAll() {
         Query query = em.createQuery(requeteFindStory);
+
         return query.getResultList();
     }
 
@@ -39,5 +40,11 @@ public class JpaStoryRepository implements  StoryRepository{
     @Override
     public List<Comment> findAllComment(int idS) {
         return null;
+    }
+
+
+    @Override
+    public void delete(Story story) {
+        em.remove(story);
     }
 }

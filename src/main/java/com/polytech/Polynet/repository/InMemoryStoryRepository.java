@@ -26,4 +26,9 @@ public class InMemoryStoryRepository implements StoryRepository {
     public List<Comment> findAllComment(int idS) {
         return comments;
     }
+
+    @Override
+    public void delete(Story story) {
+
+    }
 }
